@@ -27,6 +27,6 @@ main()-------------------------------- to run the code
 5.print the monts of the year using forloop, leapyear(),getfirstdayofyear()  
 6.the year is directly printed in a text file called calender()  
 7.stop  
-#sample output
+
 
   
