@@ -59,6 +59,29 @@ void printmonth(int year)
         if (startday != 0) fprintf(calender,"\n");      
     }
     fclose(calender);
+    for (int i = 0; i < 12; i++)
+    {
+        printf("\n\n-------------%s %d-------------\n", month[i], year);
+        printf("Sun Mon Tue Wed Thu Fri Sat\n");
+
+        for (int k = 0; k < startday; k++)
+        {
+            printf("    ");
+        }
+
+        for (int day = 1; day <= daysinamonth[i]; day++)
+        {
+            printf("%3d ", day);
+            startday++;
+            if (startday > 6)
+            {
+                startday = 0;
+                printf("\n");
+            }
+        }
+
+        if (startday != 0) printf("\n");      
+    }
 }
 
 int main()
@@ -72,3 +95,4 @@ int main()
 
     return 0;
 }
+
